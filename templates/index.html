@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{%block title%}Wlog - Home{%endblock%}
+{% block content%}
+	<div class="container">
+	<div class="row row_style">
+		<div class="col-md-4">
+			<h1>Words Worth Writing!</h1>
+		</div>
+		<div class="col-md-8">
+			{% for post in posts %}
+				<a href="{{ url_for('post',post_id=post['id'])}}">
+					<h2>{{post['title']}}</h2>
+				</a>
+				<span class="badge badge-primary">{{ post['created']}}</span>
+				<a href="{{ url_for('edit', id=post['id']) }}">
+					<span class="badge badge-warning">Edit</span>
+				</a>
+				<hr>
+				{% endfor %}
+		</div>
+	</div>
+	</div>
+{% endblock%}

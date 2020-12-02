@@ -1,0 +1,27 @@
+body{
+	width:100%;
+	height:100%;
+	margin:0;
+}	
+.navbar-brand{
+	text-decoration:none;
+	color:white;
+}
+h1{
+	font-size:60px;
+	font-family: Open-sans;
+}
+.navbar a{
+color:white !important;
+}
+.navbar a:hover{
+	color:black !important;
+}
+p{
+	font-size:40px;
+	font-style:bold;
+	color:#185869;
+}
+.navbar-custom{
+	background-color:#00008B;
+}
